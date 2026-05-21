@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getMarketDataProvider } from "@/lib/market-data";
-import { auth } from "@clerk/nextjs/server"
+import { auth } from "@clerk/nextjs/server";
 import { prisma } from "@/lib/prisma";
 
 export async function POST(req: NextRequest){
@@ -93,7 +93,7 @@ export async function POST(req: NextRequest){
         return NextResponse.json({ success: true, type, symbol, shares, pricePerShare: quote.price, totalAmount: type === "BUY" ? amountNeeded : shares * quote.price });
 
     } catch (e) {
-        console.error(e)
+        console.error(e);
         return NextResponse.json({ error: "Trade failed. Please try again." }, { status: 500 })
     }
 }

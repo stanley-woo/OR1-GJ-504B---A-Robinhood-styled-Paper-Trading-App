@@ -93,6 +93,9 @@
 - Step 28 complete: Prisma CLI upgraded to v7.8.0 to match `@prisma/client` — version mismatch resolved
 - Step 29 complete: Prisma Client regenerated successfully with new model types
 - Step 30 complete: Row-Level Security enabled on all Supabase tables
+- Step 31 Complete: Trade API route implemeted and tested with current account
+- Step 32 Complete: Portofolio API route implemted and tested with current account
+- Step 33 Complete: Implemented the skeleton of Stock Detail and Order Entry page
 
 ## Current Files And Runtime Notes
 
@@ -111,7 +114,5 @@
 ## Good Next Steps
 
 ### Ready Now
-- Build the Trade API (`POST /api/trade`) — buy/sell logic with buying power validation and atomic DB updates
-- Build the Portfolio API (`GET /api/portfolio`) — fetch positions with live quotes, compute total portfolio value
-- Build the Stock Detail + Order Entry page (`/stocks/[symbol]`)
+- Finish the Stock Detail + Order Entry page  with the light-chart and order widget (`/stocks/[symbol]`)
 - Build out the Portfolio/Dashboard page (redesign of `/dashboard`)
